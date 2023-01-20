@@ -134,7 +134,7 @@ export default () => {
 
   const getInfo = async () => {
     const response = await axios
-      .get("data.json")
+      .get("./data.json")
       .then((response) => {
         allCards = response.data;
         renderCards(allCards)
